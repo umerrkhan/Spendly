@@ -1,0 +1,87 @@
+Prompt 1
+########
+
+Add two links to the footer in @templates/base.html:
+	- "Terms and condition"
+	- "Privacy Policy"
+Both should be plain text links, no special styling needed for now.
+
+Point both to "#" as placeholder hrefs since the pages don’t exists yet.
+
+Do not modify anything else on the page.
+
+-------------------------------------------------------------------------
+git add .
+git commit -m "Changes to Footer of the base table"
+-------------------------------------------------------------------------
+
+Prompt 2
+############
+
+Create a "Terms and condition" Page for the spendly.
+1. Add a new route in [app.py](http://app.py):
+GET /terms → renders templates/terms.html
+2. Create templates/terms.html with generic Terms and Conditions.
+The content should be appropriate for a personal expense-tracking app.
+Include sections such as:
+- Acceptance of Terms
+- Use of Service
+- User Data
+- Limitation of Liability
+- Changes to Terms
+Extend base.html if it exists; otherwise, match the style of landing.html.
+3. In "templates/landing.html, upodate the "Terms and condition" footer link href "#"  to "/terms". 
+
+
+Prompt 2.1
+############
+Also make sure that appearance of @tempates/terms.html matches the website's theme
+
+-------------------------------------------------------------------------
+! git add .
+! git commit -m  "Changes to Terms and condition page"
+-------------------------------------------------------------------------
+
+
+Prompt 3
+############
+Create a "privacy" Page for the spendly.
+1. Add a new route in [app.py](http://app.py):
+GET /terms → renders templates/privacy.html
+2. Create templates/privacy.html with generic privacy policy.
+The content should be appropriate for a personal expense-tracking app.
+Include sections such as:
+- Data we colllect
+- How we use your data
+- Third Party Services
+- Contact us
+Match the style of terms.html
+Extend base.html if it exists; otherwise, match the style of landing.html.
+3. In "templates/landing.html, upodate the "Privacy Policy" footer link href "#"  to "/privacy". 
+4. Make sure that appearance of @tempates/terms.html matches the website's theme.
+
+-------------------------------------------------------------------------
+! git add .
+! git commit -m  "Changes to Privacy page"
+-------------------------------------------------------------------------
+
+Prompt 4
+############
+
+Modify only the Hero Section in the template/landing.html and @static/css/style.css 
+
+-------------------------------------------------------------------------
+! git add .
+! git commit -m  "Uploaded a image and modify the page accordingly"
+-------------------------------------------------------------------------
+Prompt 5
+############
+Add a modal to @tempates/landing.html that opens when the user clicks "See how it works".
+Requirements:
+- clicking "See how it works" opens a modal overlay
+- Modal contains an embedded YouTube video (https://www.youtube.com/shorts/p7U_98jWqWo)
+- Video should be playable inside the modal
+- Clicking the close button OR clicking outside the modal closes it.
+- When the modal closes , the video must be stop playing (not continue in the Backgroud)
+- No page libraries or dependencies - vanilla JS only, since we are not using any JS framework in the project
+Do not modify other part of the page.
